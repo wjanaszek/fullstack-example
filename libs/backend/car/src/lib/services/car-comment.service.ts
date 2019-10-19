@@ -10,6 +10,8 @@ export class CarCommentService {
     private readonly carRepository: Repository<Car>
   ) {}
 
+  // @TODO use commentRepository instead of that
+
   create(carId: string, comment: Comment): Promise<Car> {
     return this.findCarByIdOrFail(carId).then(car => {
       car.comments = [...car.comments, comment];

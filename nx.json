@@ -17,25 +17,19 @@
     "api": {
       "tags": []
     },
-    "api-interfaces": {
-      "tags": []
-    },
-    "cars-ui-comment": {
-      "tags": []
-    },
-    "cars-ui-description": {
-      "tags": []
-    },
-    "cars-feature": {
-      "tags": []
-    },
-    "cars-data-access": {
-      "tags": []
-    },
     "shared-domain": {
       "tags": []
     },
     "backend-car": {
+      "tags": []
+    },
+    "frontend-car-data-access": {
+      "tags": []
+    },
+    "frontend-car-ui-comment": {
+      "tags": []
+    },
+    "frontend-car-feature": {
       "tags": []
     }
   }

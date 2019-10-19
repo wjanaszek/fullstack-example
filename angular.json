@@ -179,155 +179,6 @@
         }
       }
     },
-    "api-interfaces": {
-      "root": "libs/api-interfaces",
-      "sourceRoot": "libs/api-interfaces/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/api-interfaces/tsconfig.lib.json",
-              "libs/api-interfaces/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/api-interfaces/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/api-interfaces/jest.config.js",
-            "tsConfig": "libs/api-interfaces/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "cars-ui-comment": {
-      "projectType": "library",
-      "root": "libs/cars/ui-comment",
-      "sourceRoot": "libs/cars/ui-comment/src",
-      "prefix": "fullstack-wojtas",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/cars/ui-comment/tsconfig.lib.json",
-              "libs/cars/ui-comment/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/cars/ui-comment/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/cars/ui-comment/jest.config.js",
-            "tsConfig": "libs/cars/ui-comment/tsconfig.spec.json",
-            "setupFile": "libs/cars/ui-comment/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "styleext": "scss"
-        }
-      }
-    },
-    "cars-ui-description": {
-      "projectType": "library",
-      "root": "libs/cars/ui-description",
-      "sourceRoot": "libs/cars/ui-description/src",
-      "prefix": "fullstack-wojtas",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/cars/ui-description/tsconfig.lib.json",
-              "libs/cars/ui-description/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/cars/ui-description/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/cars/ui-description/jest.config.js",
-            "tsConfig": "libs/cars/ui-description/tsconfig.spec.json",
-            "setupFile": "libs/cars/ui-description/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "styleext": "scss"
-        }
-      }
-    },
-    "cars-feature": {
-      "projectType": "library",
-      "root": "libs/cars/feature",
-      "sourceRoot": "libs/cars/feature/src",
-      "prefix": "fullstack-wojtas",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/cars/feature/tsconfig.lib.json",
-              "libs/cars/feature/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/cars/feature/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/cars/feature/jest.config.js",
-            "tsConfig": "libs/cars/feature/tsconfig.spec.json",
-            "setupFile": "libs/cars/feature/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "styleext": "scss"
-        }
-      }
-    },
-    "cars-data-access": {
-      "projectType": "library",
-      "root": "libs/cars/data-access",
-      "sourceRoot": "libs/cars/data-access/src",
-      "prefix": "fullstack-wojtas",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/cars/data-access/tsconfig.lib.json",
-              "libs/cars/data-access/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/cars/data-access/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/cars/data-access/jest.config.js",
-            "tsConfig": "libs/cars/data-access/tsconfig.spec.json",
-            "setupFile": "libs/cars/data-access/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "styleext": "scss"
-        }
-      }
-    },
     "shared-domain": {
       "projectType": "library",
       "root": "libs/shared/domain",
@@ -381,6 +232,105 @@
             "jestConfig": "libs/backend/car/jest.config.js",
             "tsConfig": "libs/backend/car/tsconfig.spec.json"
           }
+        }
+      }
+    },
+    "frontend-car-data-access": {
+      "projectType": "library",
+      "root": "libs/frontend/car/data-access",
+      "sourceRoot": "libs/frontend/car/data-access/src",
+      "prefix": "fullstack-wojtas",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/frontend/car/data-access/tsconfig.lib.json",
+              "libs/frontend/car/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/frontend/car/data-access/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/frontend/car/data-access/jest.config.js",
+            "tsConfig": "libs/frontend/car/data-access/tsconfig.spec.json",
+            "setupFile": "libs/frontend/car/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "frontend-car-ui-comment": {
+      "projectType": "library",
+      "root": "libs/frontend/car/ui-comment",
+      "sourceRoot": "libs/frontend/car/ui-comment/src",
+      "prefix": "fullstack-wojtas",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/frontend/car/ui-comment/tsconfig.lib.json",
+              "libs/frontend/car/ui-comment/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/frontend/car/ui-comment/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/frontend/car/ui-comment/jest.config.js",
+            "tsConfig": "libs/frontend/car/ui-comment/tsconfig.spec.json",
+            "setupFile": "libs/frontend/car/ui-comment/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "frontend-car-feature": {
+      "projectType": "library",
+      "root": "libs/frontend/car/feature",
+      "sourceRoot": "libs/frontend/car/feature/src",
+      "prefix": "fullstack-wojtas",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/frontend/car/feature/tsconfig.lib.json",
+              "libs/frontend/car/feature/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/frontend/car/feature/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/frontend/car/feature/jest.config.js",
+            "tsConfig": "libs/frontend/car/feature/tsconfig.spec.json",
+            "setupFile": "libs/frontend/car/feature/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
         }
       }
     }

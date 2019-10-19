@@ -1,7 +1,0 @@
-{
-  "extends": "../../../../tslint.json",
-  "rules": {
-    "directive-selector": [true, "attribute", "fullstackWojtas", "camelCase"],
-    "component-selector": [true, "element", "fullstack-wojtas", "kebab-case"]
-  }
-}
