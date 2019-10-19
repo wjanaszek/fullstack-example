@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fullstack-wojtas/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@fullstack-wojtas/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@fullstack-wojtas/cars/ui-comment": ["libs/cars/ui-comment/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -203,6 +203,37 @@
           }
         }
       }
+    },
+    "cars-ui-comment": {
+      "projectType": "library",
+      "root": "libs/cars/ui-comment",
+      "sourceRoot": "libs/cars/ui-comment/src",
+      "prefix": "fullstack-wojtas",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cars/ui-comment/tsconfig.lib.json",
+              "libs/cars/ui-comment/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/cars/ui-comment/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cars/ui-comment/jest.config.js",
+            "tsConfig": "libs/cars/ui-comment/tsconfig.spec.json",
+            "setupFile": "libs/cars/ui-comment/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
