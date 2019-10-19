@@ -265,6 +265,37 @@
           "styleext": "scss"
         }
       }
+    },
+    "cars-feature": {
+      "projectType": "library",
+      "root": "libs/cars/feature",
+      "sourceRoot": "libs/cars/feature/src",
+      "prefix": "fullstack-wojtas",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cars/feature/tsconfig.lib.json",
+              "libs/cars/feature/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/cars/feature/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cars/feature/jest.config.js",
+            "tsConfig": "libs/cars/feature/tsconfig.spec.json",
+            "setupFile": "libs/cars/feature/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

@@ -22,7 +22,8 @@
       ],
       "@fullstack-wojtas/cars/ui-description": [
         "libs/cars/ui-description/src/index.ts"
-      ]
+      ],
+      "@fullstack-wojtas/cars/feature": ["libs/cars/feature/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
