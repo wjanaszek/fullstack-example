@@ -26,7 +26,8 @@
       "@fullstack-wojtas/cars/feature": ["libs/cars/feature/src/index.ts"],
       "@fullstack-wojtas/cars/data-access": [
         "libs/cars/data-access/src/index.ts"
-      ]
+      ],
+      "@fullstack-wojtas/shared/domain": ["libs/shared/domain/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

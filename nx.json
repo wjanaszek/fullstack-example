@@ -31,6 +31,9 @@
     },
     "cars-data-access": {
       "tags": []
+    },
+    "shared-domain": {
+      "tags": []
     }
   }
 }
