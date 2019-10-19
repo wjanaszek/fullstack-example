@@ -296,6 +296,37 @@
           "styleext": "scss"
         }
       }
+    },
+    "cars-data-access": {
+      "projectType": "library",
+      "root": "libs/cars/data-access",
+      "sourceRoot": "libs/cars/data-access/src",
+      "prefix": "fullstack-wojtas",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/cars/data-access/tsconfig.lib.json",
+              "libs/cars/data-access/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/cars/data-access/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cars/data-access/jest.config.js",
+            "tsConfig": "libs/cars/data-access/tsconfig.spec.json",
+            "setupFile": "libs/cars/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

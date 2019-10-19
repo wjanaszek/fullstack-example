@@ -28,6 +28,9 @@
     },
     "cars-feature": {
       "tags": []
+    },
+    "cars-data-access": {
+      "tags": []
     }
   }
 }
