@@ -22,6 +22,9 @@
     },
     "cars-ui-comment": {
       "tags": []
+    },
+    "cars-ui-description": {
+      "tags": []
     }
   }
 }
